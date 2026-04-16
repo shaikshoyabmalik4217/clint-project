@@ -1,0 +1,13 @@
+def cement_quality(alite_percent):
+    if alite_percent >= 60:
+        return "High early strength cement"
+    elif 45 <= alite_percent < 60:
+        return "Normal Portland cement"
+    else:
+        return "Low early strength cement"
+
+
+# Example
+alite = 52
+print("Alite content:", alite, "%")
+print("Cement type:", cement_quality(alite))
